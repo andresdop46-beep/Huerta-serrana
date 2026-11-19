@@ -1,0 +1,132 @@
+/* Estructura general y contenedores */
+main {
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  padding: var(--space-lg) var(--space-md);
+}
+
+section {
+  margin-bottom: var(--space-2xl);
+}
+
+/* Cabecera y navegación mobile-first sin JS */
+.cabecera {
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  padding: var(--space-md);
+}
+
+.cabecera__contenedor {
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+}
+
+.cabecera__marca {
+  font-family: var(--font-serif);
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-blanco);
+  text-decoration: none;
+}
+
+.cabecera__marca:hover {
+  color: var(--color-destacado);
+}
+
+.navegacion__boton {
+  list-style: none;
+  cursor: pointer;
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+}
+
+.navegacion__boton::-webkit-details-marker {
+  display: none;
+}
+
+.navegacion__lista {
+  list-style: none;
+  margin: var(--space-md) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.navegacion__lista a {
+  display: block;
+  color: var(--color-blanco);
+  text-decoration: none;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.navegacion__lista a[aria-current="page"] {
+  background-color: var(--color-blanco);
+  color: var(--color-primario);
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .navegacion__boton {
+    display: none;
+  }
+
+  .navegacion__lista {
+    display: flex !important;
+    flex-direction: row;
+    margin-top: 0;
+    gap: var(--space-md);
+  }
+}
+
+/* Rejillas adaptables (CSS Grid) */
+.rejilla {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+@media (min-width: 768px) {
+  .rejilla--2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rejilla--3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .layout-productores {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: var(--space-xl);
+    align-items: start;
+  }
+}
+
+@media (min-width: 1280px) {
+  .rejilla--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Pie de página */
+.pie {
+  background-color: var(--color-superficie);
+  border-top: 0.125rem solid var(--color-primario);
+  padding: var(--space-xl) var(--space-md);
+  margin-top: var(--space-2xl);
+}
+
+.pie__contenedor {
+  max-width: var(--ancho-max);
+  margin: 0 auto;
+}
