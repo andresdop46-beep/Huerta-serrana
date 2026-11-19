@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto y pedido | Huerta Serrana</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__contenedor">
+      <a href="index.html" class="cabecera__marca">Huerta Serrana</a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <details class="navegacion__menu">
+          <summary class="navegacion__boton">Menú</summary>
+          <ul class="navegacion__lista">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="productores.html">Productores</a></li>
+            <li><a href="contacto.html" aria-current="page">Contacto y pedido</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="cabecera-pagina">
+      <h1>Contacto y solicitud de pedido</h1>
+      <p>Escríbenos para encargar productos sueltos del catálogo o suscribirte a una de nuestras cestas mensuales. También atendemos en <a href="mailto:pedidos@huertaserrana.example">pedidos@huertaserrana.example</a> y en el teléfono <strong>910 000 000</strong>.</p>
+    </section>
+
+    <section class="formulario-seccion" aria-labelledby="titulo-formulario">
+      <h2 id="titulo-formulario">Formulario de solicitud</h2>
+      <form class="formulario" action="#" method="post">
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="nombre">Nombre y apellidos</label>
+          <input class="formulario__campo" type="text" id="nombre" name="nombre" required autocomplete="name">
+        </div>
+
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="email">Correo electrónico</label>
+          <input class="formulario__campo" type="email" id="email" name="email" required autocomplete="email">
+        </div>
+
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="telefono">Teléfono de contacto</label>
+          <input class="formulario__campo" type="tel" id="telefono" name="telefono" required autocomplete="tel">
+        </div>
+
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="cesta">Tipo de pedido o cesta</label>
+          <select class="formulario__campo" id="cesta" name="cesta" required>
+            <option value="">Selecciona una opción</option>
+            <option value="cesta-pareja">Cesta Pareja (38 €/mes · Semanal)</option>
+            <option value="cesta-familia">Cesta Familia (62 €/mes · Semanal)</option>
+            <option value="cesta-despensa">Cesta Despensa (45 €/mes · Quincenal)</option>
+            <option value="pedido-suelto">Pedido de productos sueltos del catálogo</option>
+          </select>
+        </div>
+
+        <div class="formulario__grupo">
+          <label class="formulario__etiqueta" for="comentarios">Comentarios, productos deseados y dirección de entrega</label>
+          <textarea class="formulario__campo" id="comentarios" name="comentarios" rows="4" required></textarea>
+        </div>
+
+        <div class="formulario__grupo formulario__grupo--check">
+          <input type="checkbox" id="rgpd" name="rgpd" required>
+          <label for="rgpd">He leído y acepto la política de privacidad: consiento el tratamiento de mis datos por Huerta Serrana S. Coop. para gestionar mi solicitud.</label>
+        </div>
+
+        <button type="submit" class="boton boton--primario">Enviar solicitud</button>
+      </form>
+    </section>
+
+    <section class="faq" aria-labelledby="titulo-faq">
+      <h2 id="titulo-faq">Preguntas frecuentes</h2>
+      <details class="faq__item">
+        <summary class="faq__pregunta">¿Qué días y en qué zonas repartís?</summary>
+        <p class="faq__respuesta">Repartimos únicamente en Madrid capital y municipios de la Sierra Norte de Madrid los jueves y los sábados. No realizamos envíos al resto de España.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__pregunta">¿Con cuánta antelación debo hacer mi pedido?</summary>
+        <p class="faq__respuesta">Todos los pedidos deben solicitarse con un mínimo de 48 horas de antelación para recolectar y elaborar los productos frescos bajo demanda.</p>
+      </details>
+      <details class="faq__item">
+        <summary class="faq__pregunta">¿Cómo se abonan las cestas o pedidos?</summary>
+        <p class="faq__respuesta">Tras recibir tu solicitud por este formulario, te confirmamos la disponibilidad y el importe total por correo o teléfono antes de la entrega.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__contenedor">
+      <p><strong>Huerta Serrana S. Coop.</strong> · Contacto: <a href="mailto:pedidos@huertaserrana.example">pedidos@huertaserrana.example</a> · Teléfono: 910 000 000</p>
+      <p><small>Información básica sobre protección de datos: Responsable: Huerta Serrana S. Coop. Finalidad: atender solicitudes de pedido o información. Base jurídica: consentimiento de la persona. Conservación: hasta resolver la solicitud y los plazos legales. Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a pedidos@huertaserrana.example. No se ceden datos a terceros ni se usan cookies.</small></p>
+    </div>
+  </footer>
+</body>
+</html>
