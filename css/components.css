@@ -105,7 +105,8 @@
 .tabla {
   width: 100%;
   border-collapse: collapse;
-  background-color: var(--color-blanco);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
 }
 
 .tabla caption {
