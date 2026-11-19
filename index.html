@@ -1,112 +1,134 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cooperativa Huerta Serrana</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        header, footer {
-            background-color: #f4f4f4;
-            padding: 1rem;
-            text-align: center;
-        }
-        nav {
-            background-color: #333;
-            color: #fff;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1rem;
-        }
-        section {
-            padding: 1rem;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 0.5rem;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Huerta Serrana | Productos locales de la Sierra Norte de Madrid</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-    <header>
-        <h1>Cooperativa Huerta Serrana</h1>
-        <nav>
-            <details>
-                <summary>Ir al contenido</summary>
-                <a href="#catalogo">Catálogo</a>
-                <a href="#como-funciona">Cómo funciona</a>
-                <a href="#cestas">Cestas</a>
-                <a href="#contacto">Contacto</a>
-            </details>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>De la huerta a tu mesa en menos de 48 horas</h2>
-            <p><strong>Subtítulo</strong></p>
-            <a href="catalogo.html" class="btn">Ver catálogo</a>
-        </section>
-        <section id="como-funciona">
-            <h2>Cómo funciona</h2>
-            <ol>
-                <li>Elige tu cesta</li>
-                <li>Confirma tu pedido</li>
-                <li>Recibe tu pedido en casa</li>
-            </ol>
-        </section>
-        <section id="cestas">
-            <h2>Cestas</h2>
-            <table>
-                <caption>Cestas disponibles</caption>
-                <thead>
-                    <tr>
-                        <th>Cesta</th>
-                        <th>Precio</th>
-                        <th>Personas</th>
-                        <th>Entrega</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Cesta Pareja</td>
-                        <td>38 €/mes</td>
-                        <td>1-2 personas</td>
-                        <td>Semanal</td>
-                    </tr>
-                    <tr>
-                        <td>Cesta Familia</td>
-                        <td>62 €/mes</td>
-                        <td>3-4 personas</td>
-                        <td>Semanal</td>
-                    </tr>
-                    <tr>
-                        <td>Cesta Despensa</td>
-                        <td>45 €/mes</td>
-                        <td>2-4 personas</td>
-                        <td>Quincenal</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section id="aviso">
-            <h2>Aviso de reparto</h2>
-            <p>Reparto los jueves y sábados en Madrid capital y municipios de la sierra. Pedidos con 48 horas de antelación.</p>
-        </section>
-    </main>
-    <footer>
-        <p>Responsable: Huerta Serrana S. Coop., pedidos@huertaserrana.example, 910 000 000, sin cookies ni cesión a terceros.</p>
-    </footer>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__contenedor">
+      <a href="index.html" class="cabecera__marca">Huerta Serrana</a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <details class="navegacion__menu">
+          <summary class="navegacion__boton">Menú</summary>
+          <ul class="navegacion__lista">
+            <li><a href="index.html" aria-current="page">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="productores.html">Productores</a></li>
+            <li><a href="contacto.html">Contacto y pedido</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="portada">
+      <h1>De la huerta a tu mesa en menos de 48 horas</h1>
+      <p>Alianza de cuatro productores de la Sierra Norte de Madrid. Compra directa sin intermediarios con reparto semanal y quincenal.</p>
+      <a href="catalogo.html" class="boton boton--primario">Ver catálogo de temporada</a>
+    </section>
+
+    <section class="pasos" aria-labelledby="titulo-pasos">
+      <h2 id="titulo-pasos">Cómo funciona</h2>
+      <ol class="pasos__lista">
+        <li class="pasos__item">
+          <h3>1. Elige tus productos o cesta</h3>
+          <p>Consulta la disponibilidad de temporada en nuestro catálogo o selecciona una cesta cerrada mensual.</p>
+        </li>
+        <li class="pasos__item">
+          <h3>2. Solicita tu pedido</h3>
+          <p>Envía tu solicitud con al menos 48 horas de antelación indicando tu dirección en Madrid capital o la sierra.</p>
+        </li>
+        <li class="pasos__item">
+          <h3>3. Recíbelo jueves o sábado</h3>
+          <p>Preparamos tu pedido recién cosechado y elaborado por nuestros cuatro productores locales.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="cestas" aria-labelledby="titulo-cestas">
+      <h2 id="titulo-cestas">Nuestras cestas mensuales</h2>
+      <div class="rejilla rejilla--3">
+        <article class="tarjeta">
+          <h3 class="tarjeta__titulo">Cesta Pareja</h3>
+          <p class="tarjeta__precio">38 € / mes</p>
+          <p>Para 1-2 personas · Entrega semanal</p>
+          <p>Verdura y fruta de temporada, 1 pan, 1 huevos.</p>
+        </article>
+
+        <article class="tarjeta tarjeta--destacada">
+          <h3 class="tarjeta__titulo">Cesta Familia</h3>
+          <p class="tarjeta__precio">62 € / mes</p>
+          <p>Para 3-4 personas · Entrega semanal</p>
+          <p>Verdura y fruta de temporada, 2 panes, 1 docena de huevos, 1 queso o yogures.</p>
+        </article>
+
+        <article class="tarjeta">
+          <h3 class="tarjeta__titulo">Cesta Despensa</h3>
+          <p class="tarjeta__precio">45 € / mes</p>
+          <p>Para 2-4 personas · Entrega quincenal</p>
+          <p>Miel, mermelada, queso curado, magdalenas y 1 pan.</p>
+        </article>
+      </div>
+
+      <div class="tabla-contenedor">
+        <table class="tabla">
+          <caption>Comparativa de suscripciones mensuales de Huerta Serrana</caption>
+          <thead>
+            <tr>
+              <th scope="col">Cesta</th>
+              <th scope="col">Precio/mes</th>
+              <th scope="col">Personas</th>
+              <th scope="col">Contenido incluido</th>
+              <th scope="col">Entrega</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Cesta Pareja</th>
+              <td>38 €</td>
+              <td>1-2</td>
+              <td>Verdura y fruta de temporada, 1 pan, 1 huevos</td>
+              <td>Semanal</td>
+            </tr>
+            <tr>
+              <th scope="row">Cesta Familia</th>
+              <td>62 €</td>
+              <td>3-4</td>
+              <td>Verdura y fruta de temporada, 2 panes, 1 docena de huevos, 1 queso o yogures</td>
+              <td>Semanal</td>
+            </tr>
+            <tr>
+              <th scope="row">Cesta Despensa</th>
+              <td>45 €</td>
+              <td>2-4</td>
+              <td>Miel, mermelada, queso curado, magdalenas y 1 pan</td>
+              <td>Quincenal</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="aviso" aria-labelledby="titulo-aviso">
+      <h2 id="titulo-aviso">Información de reparto y temporada</h2>
+      <p>Repartimos en Madrid capital y municipios de la Sierra Norte los <strong>jueves y sábados</strong>. Los pedidos deben solicitarse con un mínimo de <strong>48 horas de antelación</strong>. No realizamos envíos al resto de España.</p>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__contenedor">
+      <p><strong>Huerta Serrana S. Coop.</strong> · Contacto: <a href="mailto:pedidos@huertaserrana.example">pedidos@huertaserrana.example</a> · Teléfono: 910 000 000</p>
+      <p><small>Información básica sobre protección de datos: Responsable: Huerta Serrana S. Coop. Finalidad: atender solicitudes de pedido o información. Base jurídica: consentimiento de la persona. Conservación: hasta resolver la solicitud y los plazos legales. Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a pedidos@huertaserrana.example. No se ceden datos a terceros ni se usan cookies.</small></p>
+    </div>
+  </footer>
 </body>
 </html>

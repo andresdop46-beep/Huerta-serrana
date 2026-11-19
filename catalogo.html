@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de productos | Huerta Serrana</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__contenedor">
+      <a href="index.html" class="cabecera__marca">Huerta Serrana</a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <details class="navegacion__menu">
+          <summary class="navegacion__boton">Menú</summary>
+          <ul class="navegacion__lista">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html" aria-current="page">Catálogo</a></li>
+            <li><a href="productores.html">Productores</a></li>
+            <li><a href="contacto.html">Contacto y pedido</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="cabecera-pagina">
+      <h1>Catálogo de productos</h1>
+      <p>Productos locales directos de nuestros cuatro productores de la Sierra Norte. Solicita tu pedido con 48 horas de antelación para reparto los jueves o sábados.</p>
+    </section>
+
+    <section class="catalogo" aria-labelledby="titulo-productos">
+      <h2 id="titulo-productos" class="visually-hidden">Listado de productos disponibles</h2>
+      <div class="rejilla rejilla--3">
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Verdura · Verano</span>
+          <h3 class="tarjeta__titulo">Tomate rosa de la sierra</h3>
+          <p class="tarjeta__precio">3,90 € / kg</p>
+          <p class="tarjeta__meta">Productor: Huerto Los Álamos</p>
+          <p class="tarjeta__alergenos">Alérgenos: Ninguno</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Verdura · Otoño</span>
+          <h3 class="tarjeta__titulo">Calabaza de invierno</h3>
+          <p class="tarjeta__precio">1,80 € / kg</p>
+          <p class="tarjeta__meta">Productor: Huerto Los Álamos</p>
+          <p class="tarjeta__alergenos">Alérgenos: Ninguno</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Verdura · Verano</span>
+          <h3 class="tarjeta__titulo">Judías verdes</h3>
+          <p class="tarjeta__precio">4,20 € / kg</p>
+          <p class="tarjeta__meta">Productor: Huerto Los Álamos</p>
+          <p class="tarjeta__alergenos">Alérgenos: Ninguno</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Fruta · Otoño</span>
+          <h3 class="tarjeta__titulo">Manzana reineta</h3>
+          <p class="tarjeta__precio">2,60 € / kg</p>
+          <p class="tarjeta__meta">Productor: Huerto Los Álamos</p>
+          <p class="tarjeta__alergenos">Alérgenos: Ninguno</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Lácteo · Todo el año</span>
+          <h3 class="tarjeta__titulo">Queso curado de cabra</h3>
+          <p class="tarjeta__precio">18,50 € / kg</p>
+          <p class="tarjeta__meta">Productor: Quesería La Peña</p>
+          <p class="tarjeta__alergenos">Alérgenos: Leche</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Lácteo · Todo el año</span>
+          <h3 class="tarjeta__titulo">Yogur natural de oveja</h3>
+          <p class="tarjeta__precio">2,10 € / unidad</p>
+          <p class="tarjeta__meta">Productor: Quesería La Peña</p>
+          <p class="tarjeta__alergenos">Alérgenos: Leche</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Despensa · Primavera</span>
+          <h3 class="tarjeta__titulo">Miel de romero</h3>
+          <p class="tarjeta__precio">7,50 € / bote 500 g</p>
+          <p class="tarjeta__meta">Productor: Apiarios del Jarama</p>
+          <p class="tarjeta__alergenos">Alérgenos: Ninguno</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Despensa · Verano</span>
+          <h3 class="tarjeta__titulo">Miel de brezo</h3>
+          <p class="tarjeta__precio">8,90 € / bote 500 g</p>
+          <p class="tarjeta__meta">Productor: Apiarios del Jarama</p>
+          <p class="tarjeta__alergenos">Alérgenos: Ninguno</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Panadería · Todo el año</span>
+          <h3 class="tarjeta__titulo">Pan de centeno de masa madre</h3>
+          <p class="tarjeta__precio">3,40 € / hogaza</p>
+          <p class="tarjeta__meta">Productor: Horno de Piedra</p>
+          <p class="tarjeta__alergenos">Alérgenos: Gluten</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Panadería · Todo el año</span>
+          <h3 class="tarjeta__titulo">Magdalenas de aceite de oliva</h3>
+          <p class="tarjeta__precio">3,95 € / caja 6 uds</p>
+          <p class="tarjeta__meta">Productor: Horno de Piedra</p>
+          <p class="tarjeta__alergenos">Alérgenos: Gluten, huevo</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Despensa · Todo el año</span>
+          <h3 class="tarjeta__titulo">Huevos camperos</h3>
+          <p class="tarjeta__precio">3,20 € / docena</p>
+          <p class="tarjeta__meta">Productor: Huerto Los Álamos</p>
+          <p class="tarjeta__alergenos">Alérgenos: Huevo</p>
+        </article>
+
+        <article class="tarjeta">
+          <span class="tarjeta__etiqueta">Despensa · Otoño</span>
+          <h3 class="tarjeta__titulo">Mermelada de higo</h3>
+          <p class="tarjeta__precio">4,80 € / bote 250 g</p>
+          <p class="tarjeta__meta">Productor: Horno de Piedra</p>
+          <p class="tarjeta__alergenos">Alérgenos: Ninguno</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__contenedor">
+      <p><strong>Huerta Serrana S. Coop.</strong> · Contacto: <a href="mailto:pedidos@huertaserrana.example">pedidos@huertaserrana.example</a> · Teléfono: 910 000 000</p>
+      <p><small>Información básica sobre protección de datos: Responsable: Huerta Serrana S. Coop. Finalidad: atender solicitudes de pedido o información. Base jurídica: consentimiento de la persona. Conservación: hasta resolver la solicitud y los plazos legales. Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a pedidos@huertaserrana.example. No se ceden datos a terceros ni se usan cookies.</small></p>
+    </div>
+  </footer>
+</body>
+</html>
