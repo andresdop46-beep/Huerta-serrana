@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuestros productores | Huerta Serrana</title>
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido</a>
+
+  <header class="cabecera">
+    <div class="cabecera__contenedor">
+      <a href="index.html" class="cabecera__marca">Huerta Serrana</a>
+      <nav class="navegacion" aria-label="Navegación principal">
+        <details class="navegacion__menu">
+          <summary class="navegacion__boton">Menú</summary>
+          <ul class="navegacion__lista">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="productores.html" aria-current="page">Productores</a></li>
+            <li><a href="contacto.html">Contacto y pedido</a></li>
+          </ul>
+        </details>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido-principal">
+    <section class="cabecera-pagina">
+      <h1>Nuestros productores</h1>
+      <p>Cuatro explotaciones y obradores de la Sierra Norte de Madrid unidos desde 2018 para vender directamente sin intermediarios.</p>
+    </section>
+
+    <div class="layout-productores">
+      <section class="productores" aria-labelledby="titulo-productores">
+        <h2 id="titulo-productores" class="visually-hidden">Fichas de productores locales</h2>
+        <div class="rejilla rejilla--2">
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">Buitrago del Lozoya · Desde 2009</span>
+            <h3 class="tarjeta__titulo">Huerto Los Álamos</h3>
+            <p class="tarjeta__meta"><strong>Especialidad:</strong> Hortalizas, fruta y huevos</p>
+            <p>Finca familiar de 6 hectáreas con riego por goteo y certificación ecológica en trámite.</p>
+          </article>
+
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">Lozoyuela · Desde 2014</span>
+            <h3 class="tarjeta__titulo">Quesería La Peña</h3>
+            <p class="tarjeta__meta"><strong>Especialidad:</strong> Quesos y yogures</p>
+            <p>Rebaño de 120 cabras y 80 ovejas.</p>
+          </article>
+
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">El Atazar · Desde 2011</span>
+            <h3 class="tarjeta__titulo">Apiarios del Jarama</h3>
+            <p class="tarjeta__meta"><strong>Especialidad:</strong> Miel</p>
+            <p>Cuarenta colmenas trashumantes entre el romero de primavera y el brezo de verano.</p>
+          </article>
+
+          <article class="tarjeta">
+            <span class="tarjeta__etiqueta">Torrelaguna · Desde 2017</span>
+            <h3 class="tarjeta__titulo">Horno de Piedra</h3>
+            <p class="tarjeta__meta"><strong>Especialidad:</strong> Pan y repostería</p>
+            <p>Horno de leña con masa madre propia y harinas de molino local.</p>
+          </article>
+        </div>
+      </section>
+
+      <aside class="info-lateral" aria-labelledby="titulo-aside">
+        <h2 id="titulo-aside">Datos de la cooperativa</h2>
+        <p><strong>Fundación:</strong> Huerta Serrana S. Coop. nace en 2018 en la Sierra Norte de Madrid.</p>
+        <p><strong>Compromiso 48 h:</strong> Recolectamos y elaboramos bajo pedido para que los alimentos lleguen a tu mesa en menos de 48 horas.</p>
+        <p><strong>Zonas de reparto:</strong> Madrid capital y municipios de la sierra los jueves y sábados.</p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__contenedor">
+      <p><strong>Huerta Serrana S. Coop.</strong> · Contacto: <a href="mailto:pedidos@huertaserrana.example">pedidos@huertaserrana.example</a> · Teléfono: 910 000 000</p>
+      <p><small>Información básica sobre protección de datos: Responsable: Huerta Serrana S. Coop. Finalidad: atender solicitudes de pedido o información. Base jurídica: consentimiento de la persona. Conservación: hasta resolver la solicitud y los plazos legales. Derechos: acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a pedidos@huertaserrana.example. No se ceden datos a terceros ni se usan cookies.</small></p>
+    </div>
+  </footer>
+</body>
+</html>
