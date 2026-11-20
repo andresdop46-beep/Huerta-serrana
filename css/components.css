@@ -168,7 +168,7 @@
   padding: var(--space-sm);
   border: 0.0625rem solid var(--color-primario);
   border-radius: var(--radius-sm);
-  background-color: var(--color-blanco);
+  background-color: var(--color-fondo);
   color: var(--color-texto);
 }
 
